@@ -1,60 +1,59 @@
-<b>Data</b>
-<br>
-Original data are on <i>GitHub</i>, more precisely:
-<ul>
-<li><b>CoAID</b>: <a>https://github.com/cuilimeng/CoAID</a></li>
-<li><b>FakeHealth</b>: <a>https://github.com/EnyanDai/FakeHealth</a></li>
-<li><b>ReCOVery</b>: <a>https://github.com/apurvamulay/ReCOVery</a></li>
-</ul>
+# Data
 
+Original data are on _GitHub_, more precisely:
+- **CoAID**: https://github.com/cuilimeng/CoAID
+- **FakeHealth**: https://github.com/EnyanDai/FakeHealth
+- **ReCOVery**: https://github.com/apurvamulay/ReCOVery
 
-Due to <i>Twitter</i> policy it is not possible to release data in disaggregate form.
-<br>
+Due to _Twitter_ policy it is not possible to release data in disaggregate form.
+
 Inside the folder `Data/data_w_feature` is possible to find the data with the points associated with each feature described in the article.
 
-<br>
-<br>
 
-<b>Code</b>
-<br>
-<br>
-<b>Import</b>:
-- Inside the script `Code/import_dataset.py` enter the proper `absolute_path` (the path from <i>C</i> to <i>Tesi</i>), then execute it.
-<br>
+
+# External resources
+In order to execute the code it's necessary to download GloVe pre-trained vector available here http://nlp.stanford.edu/data/glove.6B.zip and put the files insie the folder ```Resources/Glove```
+
+
+
+# Code
+
+### Import:
+- Inside the script ```js Code/import_dataset.py ``` enter the proper ```js absolute_path ``` (ie the path from _C_ to _project-name_), then execute it.
+
 After the execution, data are placed in `Data/data_row`.
 
-<b>Pre-processing</b>
-- Inside the script `Code/preprocessing_dataset.py` enter the proper `absolute_path`, then execute it.
-<br>
+### Pre-processing
+- Inside the script ```js Code/preprocessing_dataset.py ``` enter the proper ```js absolute_path ```, then execute it.
+
 After the execution, data are placed in `Data/data_cleaned`.
 
-<b>Enrichment</b>
-<br>
-In order to obtain Twitter data it's necessary to make call to API <i>Twitter</i>:
-- Enter the <i>Twitter</i> keys  inside `Code/data_enrichment/secret.json`.
-- Inside the script `Code/twitter_enrichment.py` enter the proper `absolute_path`, then execute it.
+### Enrichment
+
+In order to obtain Twitter data it's necessary to make call to API _Twitter_:
+- Enter the _Twitter_ keys  inside ```js Code/data_enrichment/secret.json`.
+- Inside the script ```js Code/twitter_enrichment.py ``` enter the proper ```js absolute_path ```, then execute it.
 After the execution, data are placed in `Data/data_twitter`.
 
-<b>Feature extraction</b>
-<br>
-- Inside the script `Code/extraction.py` enter the proper `absolute_path`, then execute it.
+### Feature extraction
+
+- Inside the script ```js Code/extraction.py ``` enter the proper ```js absolute_path ```, then execute it.
 After the execution, data are placed in `Data/data_w_feature`.
 
-<b>Class evaluation</b>
-<br>
-- Inside the script `Code/feature_class_evaluation.py` enter the proper `absolute_path`, then execute it.
+### Class evaluation
 
-<b>Global evaluation</b>
-<br>
-- In order to obtain LIWC feature it's necessary enter the <i>Receptivity</i> keys inside `Code/data_enrichment/liwc_features.py`, set the value of `extract_liwc` to True (line 17) and then execute the script.
+- Inside the script ```js Code/feature_class_evaluation.py ``` enter the proper ```js absolute_path ```, then execute it.
+
+### Global evaluation
+
+- In order to obtain LIWC feature it's necessary enter the _Receptivity_ keys inside ```js Code/data_enrichment/liwc_features.py ```, set the value of `extract_liwc` to True (line 17) and then execute the script.
     - However, the previous it's not mandatory because inside `Data/data_w_feature` are already present data with these features.  
-- Inside the script `Code/global_evaluation.py` enter the proper `absolute_path`, then execute it (results are placed in `Data/results`).
-- Inside the script `Code/results.py` enter the proper `absolute_path`, then execute it.
+- Inside the script ```js Code/global_evaluation.py ``` enter the proper ```js absolute_path ```, then execute it (results are placed in `Data/results`).
+- Inside the script ```js Code/results.py ``` enter the proper ```js absolute_path ```, then execute it.
 
-<br>
-<br>
 
-<b>Some recommendations</b>
-- Due to policy <i>Twitter</i> it's not possible make more than 180 API call per 15 minutes. Because of this the enrichment phase is pretty long.
+
+# Some recommendations
+- Due to policy _Twitter_ it's not possible make more than 180 API call per 15 minutes. Because of this the enrichment phase is pretty long.
 - To execute the global evaluation It's recommended to use GPU, especially for Deep Learning models.
 - If it's not necessary, in order to save a lot of time, it's recommended to use directly data placed inside the folder `Data/data_w_feature`.
