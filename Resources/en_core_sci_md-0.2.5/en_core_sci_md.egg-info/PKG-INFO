@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: en-core-sci-md
+Version: 0.2.5
+Summary: Spacy Models for Biomedical Text.
+Home-page: https://allenai.github.io/SciSpaCy/
+Author: Allen Institute for Artificial Intelligence
+Author-email: ai2-info@allenai.org
+License: CC BY-SA 3.0
+Description: UNKNOWN
+Platform: UNKNOWN
