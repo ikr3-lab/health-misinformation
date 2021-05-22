@@ -7,7 +7,7 @@ Original data are on _GitHub_, more precisely:
 
 Due to _Twitter_ policy it is not possible to release data in disaggregate form.
 
-Inside the folder `Data/data_w_feature` is possible to find the data with the points associated with each feature described in the article.
+Inside the folder `Data/data_w_feature` it is possible to find the data with the points associated with each feature described in the article.
 
 
 
