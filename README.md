@@ -31,7 +31,7 @@ After the execution, data are placed in `Data/data_cleaned`.
 ### Enrichment
 
 In order to obtain Twitter data it's necessary to make call to API _Twitter_:
-- Enter the _Twitter_ keys  inside ```Code/data_enrichment/secret.json`.
+- Enter the _Twitter_ keys  inside `Code/data_enrichment/secret.json`.
 - Inside the script ```Code/twitter_enrichment.py``` enter the proper ```absolute_path```, then execute it.
 After the execution, data are placed in `Data/data_twitter`.
 
