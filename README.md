@@ -19,37 +19,37 @@ In order to execute the code it's necessary to download GloVe pre-trained vector
 # Code
 
 ### Import:
-- Inside the script ```js Code/import_dataset.py ``` enter the proper ```js absolute_path ``` (ie the path from _C_ to _project-name_), then execute it.
+- Inside the script ```Code/import_dataset.py ``` enter the proper ```absolute_path ``` (ie the path from _C_ to _project-name_), then execute it.
 
 After the execution, data are placed in `Data/data_row`.
 
 ### Pre-processing
-- Inside the script ```js Code/preprocessing_dataset.py ``` enter the proper ```js absolute_path ```, then execute it.
+- Inside the script ```Code/preprocessing_dataset.py ``` enter the proper ```absolute_path ```, then execute it.
 
 After the execution, data are placed in `Data/data_cleaned`.
 
 ### Enrichment
 
 In order to obtain Twitter data it's necessary to make call to API _Twitter_:
-- Enter the _Twitter_ keys  inside ```js Code/data_enrichment/secret.json`.
-- Inside the script ```js Code/twitter_enrichment.py ``` enter the proper ```js absolute_path ```, then execute it.
+- Enter the _Twitter_ keys  inside ```Code/data_enrichment/secret.json`.
+- Inside the script ```Code/twitter_enrichment.py ``` enter the proper ```absolute_path ```, then execute it.
 After the execution, data are placed in `Data/data_twitter`.
 
 ### Feature extraction
 
-- Inside the script ```js Code/extraction.py ``` enter the proper ```js absolute_path ```, then execute it.
+- Inside the script ```Code/extraction.py ``` enter the proper ```absolute_path ```, then execute it.
 After the execution, data are placed in `Data/data_w_feature`.
 
 ### Class evaluation
 
-- Inside the script ```js Code/feature_class_evaluation.py ``` enter the proper ```js absolute_path ```, then execute it.
+- Inside the script ```Code/feature_class_evaluation.py ``` enter the proper ```absolute_path ```, then execute it.
 
 ### Global evaluation
 
-- In order to obtain LIWC feature it's necessary enter the _Receptivity_ keys inside ```js Code/data_enrichment/liwc_features.py ```, set the value of `extract_liwc` to True (line 17) and then execute the script.
+- In order to obtain LIWC feature it's necessary enter the _Receptivity_ keys inside ```Code/data_enrichment/liwc_features.py ```, set the value of `extract_liwc` to True (line 17) and then execute the script.
     - However, the previous it's not mandatory because inside `Data/data_w_feature` are already present data with these features.  
-- Inside the script ```js Code/global_evaluation.py ``` enter the proper ```js absolute_path ```, then execute it (results are placed in `Data/results`).
-- Inside the script ```js Code/results.py ``` enter the proper ```js absolute_path ```, then execute it.
+- Inside the script ```Code/global_evaluation.py ``` enter the proper ```absolute_path ```, then execute it (results are placed in `Data/results`).
+- Inside the script ```Code/results.py ``` enter the proper ```absolute_path ```, then execute it.
 
 
 
