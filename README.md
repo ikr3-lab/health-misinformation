@@ -7,19 +7,19 @@ Original data are on _GitHub_, more precisely:
 
 Due to _Twitter_ policy it is not possible to release data in disaggregate form.
 
-Inside the folder `Data/data_w_feature` is possible to find the data with the points associated with each feature described in the article.
+Inside the folder `Data/data_w_feature` it is possible to find the data with the points associated with each feature described in the article.
 
 
 
 # External resources
-In order to execute the code it's necessary to download GloVe pre-trained vector available here http://nlp.stanford.edu/data/glove.6B.zip and put the files insie the folder ```Resources/Glove```
+In order to execute the code it's necessary to download GloVe pre-trained vector available here http://nlp.stanford.edu/data/glove.6B.zip and put the files inside the folder ```Resources/Glove```
 
 
 
 # Code
 
 ### Import:
-- Inside the script ```Code/import_dataset.py``` enter the proper ```absolute_path``` (ie the pathfrom _C_ to _project-name_), then execute it.
+- Inside the script ```Code/import_dataset.py``` enter the proper ```absolute_path``` (ie the path from _C_ to _project-name_), then execute it.
 
 After the execution, data are placed in `Data/data_row`.
 
