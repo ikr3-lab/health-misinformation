@@ -1,3 +1,8 @@
+# Feature description
+Inside `feature description.pdf` it's possible to find the list and description associated to each feature used in this work.
+
+
+
 # Data
 
 Original data are on _GitHub_, more precisely:
@@ -12,7 +17,7 @@ Inside the folder `Data/data_w_feature` it is possible to find the data with the
 
 
 # External resources
-In order to execute the code it's necessary to download GloVe pre-trained vector available here http://nlp.stanford.edu/data/glove.6B.zip and put the files inside the folder ```Resources/Glove```
+In order to execute the code it's necessary to download GloVe pre-trained vector available here http://nlp.stanford.edu/data/glove.6B.zip and put the .txt files (dim. 50, 100 and 200) inside the folder ```Resources/Glove```
 
 
 
