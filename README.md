@@ -1,5 +1,5 @@
 # Feature description
-Inside `feature description.pdf` it's possible to find the list and description associated to each feature used in this work.
+Inside `feature description.pdf` it's possible to find the list and description of each feature used in this work.
 
 
 
